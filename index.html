@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        DarshanEase - Temple Visit Booking
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav>
+
+        <div class="logo">
+            DarshanEase
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="#temple">
+                Temple
+            </a>
+
+            <a href="#sessions">
+                Sessions
+            </a>
+
+            <a href="#booking">
+                Book Visit
+            </a>
+
+            <a href="#bookings">
+                My Bookings
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <h1>
+            Plan Your Temple Visit
+        </h1>
+
+        <p>
+            Book your darshan session
+            at Shree Ganesh Temple.
+        </p>
+
+        <a
+            href="#booking"
+            class="hero-button"
+        >
+            Book Your Visit
+        </a>
+
+    </section>
+
+
+
+    <!-- =========================
+         TEMPLE INFORMATION
+    ========================== -->
+
+    <section
+        id="temple"
+        class="container"
+    >
+
+        <h2>
+            Temple Information
+        </h2>
+
+
+        <div
+            id="templeInfo"
+            class="temple-card"
+        >
+
+            Loading temple information...
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         AVAILABLE SESSIONS
+    ========================== -->
+
+    <section
+        id="sessions"
+        class="container"
+    >
+
+        <h2>
+            Available Darshan Sessions
+        </h2>
+
+
+        <div id="sessionCards">
+
+            Loading sessions...
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         BOOKING FORM
+    ========================== -->
+
+    <section
+        id="booking"
+        class="container"
+    >
+
+        <h2>
+            Book Your Visit
+        </h2>
+
+
+        <form id="bookingForm">
+
+
+            <label for="visitorName">
+                Visitor Name
+            </label>
+
+
+            <input
+                type="text"
+                id="visitorName"
+                placeholder="Enter your name"
+                required
+            >
+
+
+
+            <label for="phone">
+                Contact Number
+            </label>
+
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+
+
+            <label for="numberOfVisitors">
+                Number of Visitors
+            </label>
+
+
+            <input
+                type="number"
+                id="numberOfVisitors"
+                min="1"
+                max="10"
+                value="1"
+                required
+            >
+
+
+
+            <label for="date">
+                Select Date
+            </label>
+
+
+            <select
+                id="date"
+                required
+            >
+
+                <option value="">
+                    Select a date
+                </option>
+
+            </select>
+
+
+
+            <label for="sessionSelect">
+                Select Session
+            </label>
+
+
+            <select
+                id="sessionSelect"
+                required
+            >
+
+                <option value="">
+                    Select a session
+                </option>
+
+            </select>
+
+
+
+            <button
+                type="submit"
+                id="submitButton"
+            >
+
+                Confirm Booking
+
+            </button>
+
+
+            <button
+                type="button"
+                id="cancelEditButton"
+                class="cancel-edit-button"
+                onclick="cancelEdit()"
+            >
+
+                Cancel Editing
+
+            </button>
+
+
+        </form>
+
+
+        <div id="message"></div>
+
+    </section>
+
+
+
+    <!-- =========================
+         BOOKINGS
+    ========================== -->
+
+    <section
+        id="bookings"
+        class="container"
+    >
+
+        <h2>
+            My Bookings
+        </h2>
+
+
+        <div id="bookingList">
+
+            Loading bookings...
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        © 2026 DarshanEase |
+        Temple Visit Booking System
+
+    </footer>
+
+
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
